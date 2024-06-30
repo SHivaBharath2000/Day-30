@@ -1,0 +1,134 @@
+<mxfile host="app.diagrams.net" modified="2024-06-30T10:29:25.058Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="KgbB_IWE3PqnO-MjZfkZ" version="24.6.4" type="google">
+  <diagram name="Page-1" id="k3Wl8LOWiAauprJHbQ4l">
+    <mxGraphModel dx="880" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TjbdBot4XybQkpJCTx5u-63" value="MENTORS" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="630" y="85" width="160" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="TjbdBot4XybQkpJCTx5u-64" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TjbdBot4XybQkpJCTx5u-63">
+          <mxGeometry y="30" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="TjbdBot4XybQkpJCTx5u-65" value="Mentor-Id(PK)(VARCHAR)&lt;br&gt;Mentor Name(VARCHAR)&lt;br&gt;Batch Name(FK)(VARCHAR)&lt;div&gt;Email(VARCHAR)&lt;br&gt;Phone no(INT)&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;overflow=hidden;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;" vertex="1" parent="TjbdBot4XybQkpJCTx5u-64">
+          <mxGeometry width="160" height="110" as="geometry">
+            <mxRectangle width="160" height="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjbdBot4XybQkpJCTx5u-83" value="STUDENTS" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="100" y="70" width="165" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="TjbdBot4XybQkpJCTx5u-84" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TjbdBot4XybQkpJCTx5u-83">
+          <mxGeometry y="30" width="165" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="TjbdBot4XybQkpJCTx5u-85" value="Student-Id(PK) (VARCHAR)&lt;br&gt;Student-Name (VARCHAR)&lt;br&gt;Batch-Name(FK) (VARCHAR)&lt;br&gt;Email (VARCHAR)&lt;br&gt;Phone no(INT)&lt;br&gt;Qualification(VARCHAR)&lt;div&gt;Year of Passing&lt;span style=&quot;background-color: initial;&quot;&gt;(INT)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#666666;overflow=hidden;fillColor=#f5f5f5;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;fontColor=#333333;" vertex="1" parent="TjbdBot4XybQkpJCTx5u-84">
+          <mxGeometry width="165" height="140" as="geometry">
+            <mxRectangle width="165" height="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjbdBot4XybQkpJCTx5u-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="TjbdBot4XybQkpJCTx5u-83" source="TjbdBot4XybQkpJCTx5u-84" target="TjbdBot4XybQkpJCTx5u-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TjbdBot4XybQkpJCTx5u-86" value="CLASS" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="331" y="300" width="169" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="TjbdBot4XybQkpJCTx5u-87" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TjbdBot4XybQkpJCTx5u-86">
+          <mxGeometry y="30" width="169" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="TjbdBot4XybQkpJCTx5u-88" value="Batch Name(PK)(VARCHAR)&lt;br&gt;Student-Id(FK)(VARCHAR)&lt;div&gt;Mentor-Id(FK)(VARCHAR)&lt;br&gt;Task ID(FK)(VARCHAR)&lt;br&gt;Session&lt;span style=&quot;background-color: initial;&quot;&gt;(VARCHAR)&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;" vertex="1" parent="TjbdBot4XybQkpJCTx5u-87">
+          <mxGeometry width="169" height="110" as="geometry">
+            <mxRectangle width="169" height="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjbdBot4XybQkpJCTx5u-89" value="TASK" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="560" y="440" width="150" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="TjbdBot4XybQkpJCTx5u-90" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TjbdBot4XybQkpJCTx5u-89">
+          <mxGeometry y="30" width="150" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="TjbdBot4XybQkpJCTx5u-91" value="Task-ID(PK)&lt;span style=&quot;text-align: left;&quot;&gt;(VARCHAR)&lt;/span&gt;&lt;br&gt;Batch-Name(FK)&lt;span style=&quot;text-align: left;&quot;&gt;(VARCHAR)&lt;/span&gt;&lt;br&gt;Task Name&lt;span style=&quot;text-align: left;&quot;&gt;(VARCHAR)&lt;/span&gt;&lt;div&gt;Marks required&lt;span style=&quot;text-align: left;&quot;&gt;(VARCHAR)&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="TjbdBot4XybQkpJCTx5u-90">
+          <mxGeometry width="150" height="110" as="geometry">
+            <mxRectangle width="150" height="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjbdBot4XybQkpJCTx5u-92" value="QUERIES" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="760" y="440" width="150" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="TjbdBot4XybQkpJCTx5u-93" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TjbdBot4XybQkpJCTx5u-92">
+          <mxGeometry y="30" width="150" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="TjbdBot4XybQkpJCTx5u-94" value="Query-ID(PK)&lt;span style=&quot;text-align: left;&quot;&gt;(VARCHAR)&lt;/span&gt;&lt;br&gt;Student-Id(FK)&lt;span style=&quot;text-align: left;&quot;&gt;(VARCHAR)&lt;/span&gt;&lt;br&gt;&lt;div&gt;Query Title&lt;span style=&quot;text-align: left;&quot;&gt;(VARCHAR)&lt;/span&gt;&lt;br&gt;Topic&lt;span style=&quot;text-align: left;&quot;&gt;(VARCHAR)&lt;/span&gt;&lt;br&gt;Timings&lt;span style=&quot;text-align: left;&quot;&gt;(VARCHAR)&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="TjbdBot4XybQkpJCTx5u-93">
+          <mxGeometry width="150" height="110" as="geometry">
+            <mxRectangle width="150" height="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjbdBot4XybQkpJCTx5u-96" value="FEEDBACK" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="90" y="459" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="TjbdBot4XybQkpJCTx5u-97" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TjbdBot4XybQkpJCTx5u-96">
+          <mxGeometry y="30" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="TjbdBot4XybQkpJCTx5u-98" value="Feedback-ID(PK)&lt;span style=&quot;text-align: left;&quot;&gt;(VARCHAR)&lt;/span&gt;&lt;div&gt;Student-Id(FK)&lt;span style=&quot;text-align: left; background-color: initial;&quot;&gt;(VARCHAR)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Feedback-Title&lt;span style=&quot;text-align: left; background-color: initial;&quot;&gt;(VARCHAR)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="TjbdBot4XybQkpJCTx5u-97">
+          <mxGeometry width="160" height="100" as="geometry">
+            <mxRectangle width="160" height="100" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjbdBot4XybQkpJCTx5u-99" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.018;exitY=0.414;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="TjbdBot4XybQkpJCTx5u-84">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="300" as="targetPoint" />
+            <mxPoint x="270" y="160" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="400" y="158" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjbdBot4XybQkpJCTx5u-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.012;entryY=0.018;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100.01999999999998" y="110.00000000000003" as="targetPoint" />
+            <mxPoint x="332" y="363.02" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="33" y="363.02" />
+              <mxPoint x="33" y="110.02000000000001" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjbdBot4XybQkpJCTx5u-106" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.745;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="380" as="targetPoint" />
+            <mxPoint x="630" y="196.95000000000005" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="630" y="200" />
+              <mxPoint x="590" y="200" />
+              <mxPoint x="590" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjbdBot4XybQkpJCTx5u-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="TjbdBot4XybQkpJCTx5u-84" target="TjbdBot4XybQkpJCTx5u-96">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TjbdBot4XybQkpJCTx5u-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.013;entryY=0.364;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="TjbdBot4XybQkpJCTx5u-87" target="TjbdBot4XybQkpJCTx5u-90">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="385" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="500" y="410" />
+              <mxPoint x="520" y="410" />
+              <mxPoint x="520" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjbdBot4XybQkpJCTx5u-110" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.453;entryY=0.014;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="TjbdBot4XybQkpJCTx5u-84" target="TjbdBot4XybQkpJCTx5u-92">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="170" />
+              <mxPoint x="360" y="260" />
+              <mxPoint x="828" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjbdBot4XybQkpJCTx5u-111" value="&lt;b&gt;ER DIAGRAM FOR GUVI ZEN CLASS&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" width="230" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
